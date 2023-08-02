@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="sd-manu-red-800-250" content="width=800,height=250" />
+		<meta name="sd-manu-blue-800-250" content="width=800,height=250" />
 		<script type="text/javascript">
 			var clickTag = "https://www.qualcomm.com/de/snapdragon#overview"
 		</script>
@@ -12,7 +12,7 @@
 				margin: 0;
 				padding: 0;
 			}
-			.sd-manu-red-800-250 {
+			.sd-manu-blue-800-250 {
 				width: 800px;
 				height: 250px;
 				background-color: #000;
@@ -68,32 +68,36 @@
 	<body>
 		<a
 			href="javascript:window.open(window.clickTag)"
-			class="sd-manu-red-800-250"
+			class="sd-manu-blue-800-250"
 			width="800"
 			height="250"
 		>
-			<img class="top-text" src="assets/manu-red-800-250-top-text.png" alt="" />
 			<img
-				class="bottom-text"
-				src="assets/manu-red-800-250-bottom-text.png"
+				class="top-text"
+				src="assets/manu-blue-800-250-top-text.png"
 				alt=""
 			/>
-			<img class="lock-up" src="assets/manu-red-800-250-lock-up.png" alt="" />
-			<img class="button" src="assets/manu-red-800-250-button.png" alt="" />
-			<img class="mat" src="assets/manu-red-800-250-mat.png" alt="" />
-			<img class="image" src="assets/manu-red-800-250-image.jpg" alt="" />
+			<img
+				class="bottom-text"
+				src="assets/manu-blue-800-250-bottom-text.png"
+				alt=""
+			/>
+			<img class="lock-up" src="assets/manu-blue-800-250-lock-up.png" alt="" />
+			<img class="button" src="assets/manu-blue-800-250-button.png" alt="" />
+			<img class="mat" src="assets/manu-blue-800-250-mat.png" alt="" />
+			<img class="image" src="assets/manu-blue-800-250-image.jpg" alt="" />
 		</a>
 	</body>
 	<script>
-		const sdManURed800x250Animate = () => {
-			const mat = document.querySelector(".sd-manu-red-800-250 .mat")
-			const image = document.querySelector(".sd-manu-red-800-250 .image")
-			const topText = document.querySelector(".sd-manu-red-800-250 .top-text")
+		const sdManUBlue800x250Animate = () => {
+			const mat = document.querySelector(".sd-manu-blue-800-250 .mat")
+			const image = document.querySelector(".sd-manu-blue-800-250 .image")
+			const topText = document.querySelector(".sd-manu-blue-800-250 .top-text")
 			const bottomText = document.querySelector(
-				".sd-manu-red-800-250 .bottom-text"
+				".sd-manu-blue-800-250 .bottom-text"
 			)
-			const lockUp = document.querySelector(".sd-manu-red-800-250 .lock-up")
-			const button = document.querySelector(".sd-manu-red-800-250 .button")
+			const lockUp = document.querySelector(".sd-manu-blue-800-250 .lock-up")
+			const button = document.querySelector(".sd-manu-blue-800-250 .button")
 
 			const tl = gsap.timeline()
 
@@ -132,6 +136,6 @@
 				)
 				.to(lockUp, { y: -270, duration: 0.5, ease: "power1.inOut" }, "-=.65")
 		}
-		sdManURed800x250Animate()
+		sdManUBlue800x250Animate()
 	</script>
 </html>
